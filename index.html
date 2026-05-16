@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink King</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <!-- section header / navbare de mon site -->
+
+    <header>
+        <nav
+            class="bg-white border border-gray-200 dark:border-gray-700 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 shadow">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="C:\Users\USER\Documents\site\index.html" class="flex items-center">
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+                        Drink King
+                    </span>
+                </a>
+
+                <div class="flex items-center">
+                    <button id="menu-toggle" type="button"
+                        class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Hamburger icon -->
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="w-full md:block md:w-auto hidden" id="mobile-menu">
+                    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-white bg-white rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                                aria-current="page">
+                                Accueil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="templates/a_propos.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                A propos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="C:\Users\USER\Documents\site\templates\services.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#menus"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                Menus
+                            </a>
+                        </li>
+                        <li>
+                            <a href="C:\Users\USER\Documents\site\templates\contact.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="h-14 lg:h-14"></div>
+    <!-- section de l'hero carousel de mon site  -->
+
+    <main class="overflow-x-hidden">
+        <section class="bg-neutral-primary  px-4 mx-auto max-w-7xl">
+            <div class="py-8 px-4 lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+                <div class="flex flex-col justify-center">
+                    <h1 class="mb-6 text-4xl tracking-tighter text-heading md:text-4xl lg:text-4xl">Bienvenue chez <span
+                            style="color: #ebba25;"> Drink King</span></h1>
+                    <p class="mb-8 text-base font-normal text-body md:text-xl">Collection raffinée de whiskys, vins et
+                        spiritueux,
+                        dédiée aux amateurs adultes en quête de qualité et d’authenticité.
+                        Profitez d’un service fiable et d’un large choix pour toutes vos occasions.
+                    </p>
+                    <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 md:space-x-4">
+                        <button type="button"
+                            class="inline-flex items-center justify-center text-yellow-500  box-border border border-yellow-500 focus:ring-4 focus:ring-brand-medium shadow-xl font-medium rounded-full px-5 py-3 focus:outline-none">
+                            <a href="C:\Users\USER\Documents\site\templates\a_propos.html">voir plus</a>
+                            <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+                            </svg>
+                        </button>
+                        <button type="button"
+                            class="inline-flex items-center justify-center text-yellow-500 bg-brand hover:bg-yellow-500 box-border border border-yellow-500 focus:ring-4 focus:ring-brand-medium shadow-xl font-medium rounded-lg hover:text-white px-5 py-3 focus:outline-none"><a href="C:\Users\USER\Documents\site\templates\contact.html">Contactez-Nous</a>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.3545 22.2323C15.3344 21.7262 11.1989 20.2993 7.44976 16.5502C3.70065 12.8011 2.2738 8.66559 1.76767 6.6455C1.47681 5.48459 2.00058 4.36434 2.88869 3.72997L5.21694 2.06693C6.57922 1.09388 8.47432 1.42407 9.42724 2.80051L10.893 4.91776C11.5152 5.8165 11.3006 7.0483 10.4111 7.68365L9.24234 8.51849C9.41923 9.1951 9.96939 10.5846 11.6924 12.3076C13.4154 14.0306 14.8049 14.5807 15.4815 14.7576L16.3163 13.5888C16.9517 12.6994 18.1835 12.4847 19.0822 13.1069L21.1995 14.5727C22.5759 15.5257 22.9061 17.4207 21.933 18.783L20.27 21.1113C19.6356 21.9994 18.5154 22.5232 17.3545 22.2323ZM8.86397 15.136C12.2734 18.5454 16.0358 19.8401 17.8405 20.2923C18.1043 20.3583 18.4232 20.2558 18.6425 19.9488L20.3056 17.6205C20.6299 17.1665 20.5199 16.5348 20.061 16.2171L17.9438 14.7513L17.0479 16.0056C16.6818 16.5182 16.0047 16.9202 15.2163 16.7501C14.2323 16.5378 12.4133 15.8569 10.2782 13.7218C8.1431 11.5867 7.46219 9.7677 7.24987 8.7837C7.07977 7.9953 7.48181 7.31821 7.99439 6.95208L9.24864 6.05618L7.78285 3.93893C7.46521 3.48011 6.83351 3.37005 6.37942 3.6944L4.05117 5.35744C3.74413 5.57675 3.64162 5.89565 3.70771 6.15943C4.15989 7.96418 5.45459 11.7266 8.86397 15.136Z"
+                                        fill="#ebba25" />
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+               <!-- component -->
+<div
+  class="max-w-5xl mx-auto  relative flex h-64 w-96 cursor-pointer flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700 shadow-md transition-opacity hover:opacity-90"
+  data-dialog-target="image-dialog"
+>
+  <img
+    alt="nature"
+    class="h-full w-full object-cover object-center"
+    src="image/1.jpg"
+  />
+</div>
+ 
+            </div>
+        </section>
+        <div class="bg-white">
+            <h1 class="px-4 mx-auto max-w-7xl text-center text-3xl font-semibold capitalize text-gray-900 lg:text-4xl">Sur <span
+                    class=" text-yellow-400">Drink King </span></h1>
+            <div class="mx-auto mt-6 flex justify-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-yellow-400"></span><span
+                    class="mx-1 inline-block h-1 w-3 rounded-full bg-yellow-400"></span><span
+                    class="inline-block h-1 w-40 rounded-full bg-yellow-400"></span><span
+                    class="mx-1 inline-block h-1 w-3 rounded-full bg-yellow-400"></span><span
+                    class="inline-block h-1 w-1 rounded-full bg-yellow-400"></span>
+            </div>
+        </div>
+
+        <section class="max-w-7xl px-4 mx-auto">
+            <div class="flex flex-col p-12 sm:p-6 md:p-4 justify-center bg-white">
+                <!-- Themes: blue, purple and teal -->
+                <div data-theme="teal">
+                    <h2 class="sr-only">Featured case study</h2>
+                    <section class="font-sans text-black">
+                        <div
+                            class="[ lg:flex lg:items-center ] [ fancy-corners fancy-corners--large fancy-corners--top-left fancy-corners--bottom-right ] gap-16">
+                            <div class="flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60">
+                                <div class="h-full">
+                                    <article class="h-full">
+                                        <div class="h-full">
+                                            <img class="h-full  px-4 mx-auto max-w-sm object-cover rounded-full" src="image/2.jpg" width="733"
+                                                height="412" alt='""' typeof="foaf:Image" />
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="p-6 bg-grey">
+                                <div class="leading-relaxed">
+                                    <h2 class="leading-tight text-4xl font-bold">L’excellence à chaque gorgée</h2>
+                                    <p class="mt-4">Drink King est né de la passion pour les boissons d’exception et du
+                                        désir de les rendre accessibles aux amateurs jeunes & adultes exigeants. Nous
+                                        sélectionnons
+                                        avec soin whiskys, vins, jus et spiritueux auprès de producteurs de confiance,
+                                        afin de
+                                        garantir qualité, authenticité et plaisir à chaque dégustation. <br>
+                                        <span class="text-yellow-400">Drink King</span> – Ta soif, notre royaume
+                                    </p>
+                                    <div style="display: flex;" class="inline-flex text-yellow-500">
+                                         <p><a class="mt-4 button button--secondary" href="C:\Users\USER\Documents\site\templates\a_propos.html">Découvrir plus sur nous</a>
+                                        
+                                         </p>
+                                         
+                                         <svg style="margin-top: 5px;" class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             fill="none" viewBox="0 0 24 24">
+                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                 d="M19 12H5m14 0-4 4m4-4-4-4" />
+                                         </svg>
+                                        </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-white">
+            <h1 class="text-center text-3xl font-semibold capitalize text-gray-900 lg:text-4xl">Nos<span
+                    class=" text-yellow-400"> Univers </span></h1>
+            <div class="mx-auto mt-6 flex justify-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-yellow-400"></span><span
+                    class="mx-1 inline-block h-1 w-3 rounded-full bg-yellow-400"></span><span
+                    class="inline-block h-1 w-40 rounded-full bg-yellow-400"></span><span
+                    class="mx-1 inline-block h-1 w-3 rounded-full bg-yellow-400"></span><span
+                    class="inline-block h-1 w-1 rounded-full bg-yellow-400"></span>
+            </div>
+        </div>
+        <section class="text-gray-600 body-font max-w-7xl mx-auto px-4">
+            <div class="container px-5 py-24 mx-auto">
+                <div
+                    class="gap-1 flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                    <div
+                        class="gap-8 sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                        <h2 class=" text-lg title-font font-medium mb-2">Sélection <span class="text-yellow-400">
+                                étoilée</span></h2>
+                        <p class="leading-relaxed text-base">Découvrez notre Sélection étoilée, une gamme de spiritueux
+                            soigneusement choisis pour leur qualité exceptionnelle et leur caractère unique. Chaque
+                            bouteille reflète un savoir-faire authentique et une expérience de dégustation raffinée.</p>
+                    </div>
+                </div>
+                <div
+                    class="gap-1 flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                     <div
+                        class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                            <circle cx="6" cy="6" r="3"></circle>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                        <h2 class=" text-lg title-font font-medium mb-2">Catalyseur de <span class="text-yellow-400">
+                                Saveurs </span></h2>
+                        <p class="leading-relaxed text-base">Découvrez Le Catalyseur de Saveurs, une sélection pensée
+                            pour
+                            réveiller vos sens et intensifier chaque expérience de dégustation. Ces spiritueux ont été
+                            choisis pour leur puissance aromatique et leur capacité à transformer un simple moment en
+                            une
+                            véritable découverte gustative.</p>
+                    </div>
+                   
+                </div>
+                <div class="gap-1 flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+                    <div
+                        class="gap-8 sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 flex-shrink-0">
+                        <svg class="w-14 h-14 text-yellow-400 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M9.00004 4c0-1.10457.89543-2 1.99996-2h2c1.1046 0 2 .89543 2 2v3H9.00004V4Zm0 5v.41924c-.87786.56584-1.41239 1.28066-1.69868 2.13956-.30199.9059-.30165 1.9228-.30134 2.8523L7.00004 20c0 1.1047.89549 2 2 2H15c1.1046 0 2-.8954 2-2v-1h-4.9999c-.5523 0-1-.4477-1-1v-5c0-.5523.4477-1 1-1h4.8213c-.034-.1494-.0745-.2967-.1227-.4412-.2863-.8589-.8208-1.57372-1.6987-2.13956V9H9.00004Z" />
+                            <path fill="currentColor" d="M17 14h-3.9999v3H17v-3Z" />
+                        </svg>
+
+                    </div>
+                    <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                        <h2 class=" text-lg title-font font-medium mb-2">Les 400<span class="text-yellow-400">
+                                Arômes</span>
+                        </h2>
+                        <p class="leading-relaxed text-base">Découvrez Les 400 Arômes, une sélection riche et complexe
+                            de
+                            spiritueux aux profils variés et surprenants. Chaque bouteille révèle une palette aromatique
+                            unique, allant des notes boisées et épicées aux touches plus douces et fruitées.</p>
+                    </div>
+                </div>
+        </section>
+
+        <div class="bg-white max-w-7xl px-4 mx-auto">
+            <h1 class="text-center text-3xl font-semibold capitalize text-gray-900 lg:text-4xl"  id="menus">Nos Saveurs <span
+                    class=" text-yellow-400">fruitées </span></h1>
+            <div class="mx-auto mt-6 flex justify-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-yellow-400"></span><span
+                    class="mx-1 inline-block h-1 w-3 rounded-full bg-yellow-400"></span><span
+                    class="inline-block h-1 w-40 rounded-full bg-yellow-400"></span><span
+                    class="mx-1 inline-block h-1 w-3 rounded-full bg-yellow-400"></span><span
+                    class="inline-block h-1 w-1 rounded-full bg-yellow-400"></span>
+            </div>
+        </div>
+
+        <!--  Grid Section - Starts Here  -->
+        <section id="Projects"
+            class="gap-8 w-full mx-auto max-w-7xl px-4 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+
+            <!--    Product card 1 - Starts Here  -->
+            <div
+                class="max-w-7xl mx-auto px-4 w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <a href="#">
+                    <img src="https://images.unsplash.com/photo-1646753522408-077ef9839300?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NjZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3 uppercase text-xs">Drink King</span>
+                        <p class="text-lg font-bold text-black truncate block capitalize">Jus aux mandarines</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold text-black cursor-auto my-3">800 FCFA</p>
+                            <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">1000 FCFA</p>
+                            </del>
+                            <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </a>
+            </div>             <!--    Product card 1 - Ends Here  -->
+
+            <!--    Product card 2 - Starts Here  -->
+            <div
+                class="max-w-7xl px-4 mx-auto w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <a href="#">
+                    <img src="https://images.unsplash.com/photo-1651950519238-15835722f8bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3 uppercase text-xs">Drink King</span>
+                        <p class="text-lg font-bold text-black truncate block capitalize">Jus d'orange</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold text-black cursor-auto my-3">800 FCFA</p>
+                            <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">1000 FCFA</p>
+                            </del>
+                            <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--    Product card 2- Ends Here  -->
+
+            <!--    Product card 3 - Starts Here  -->
+            <div
+                class="max-w-7xl px-4 mx-auto w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <a href="#">
+                    <img src="https://images.unsplash.com/photo-1651950537598-373e4358d320?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MjV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3 uppercase text-xs">Drink King</span>
+                        <p class="text-lg font-bold text-black truncate block capitalize">Jus de coco</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold text-black cursor-auto my-3">800 FCFA</p>
+                            <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">1000 FCFA</p>
+                            </del>
+                            <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--    Product card 3 - Ends Here  -->
+
+            <!--    Product card 4 - Starts Here  -->
+            <div
+                class="max-w-7xl px-4 mx-auto w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <a href="#">
+                    <img src="https://images.unsplash.com/photo-1651950540805-b7c71869e689?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mjl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3 uppercase text-xs">Drink King</span>
+                        <p class="text-lg font-bold text-black truncate block capitalize">Jus de pastêques</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold text-black cursor-auto my-3">800 FCFA</p>
+                            <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">1000 FCFA</p>
+                            </del>
+                            <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--    Product card 4 - Ends Here  -->
+
+            <!--    Product card 5 - Starts Here  -->
+            <div
+                class="max-w-7xl px-4 mx-auto w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <a href="#">
+                    <img src="https://images.unsplash.com/photo-1649261191624-ca9f79ca3fc6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3 uppercase text-xs">Drink King</span>
+                        <p class="text-lg font-bold text-black truncate block capitalize">Energy </p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold text-black cursor-auto my-3">800 FCFA</p>
+                            <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">1000 FCFA</p>
+                            </del>
+                            <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--    Product card 5 - Ends Here  -->
+
+            <!--    Product card 6 - Starts Here  -->
+            <div
+                class="max-w-7xl px-4 mx-auto w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <a href="#">
+                    <img src="https://images.unsplash.com/photo-1649261191606-cb2496e97eee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3 uppercase text-xs">Drink King</span>
+                        <p class="text-lg font-bold text-black truncate block capitalize">Jus de pastêques</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold text-black cursor-auto my-3">800 FCFA</p>
+                            <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">1000 FCFA</p>
+                            </del>
+                            <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--    Product card 6 - Ends Here  -->
+
+        </section>
+
+        <!--  Grid Section - Ends Here -->
+
+        <div class="bg-white">
+            <h1 class="max-w-7xl px-4 mx-auto text-center text-3xl font-semibold capitalize text-gray-900 lg:text-4xl">
+                Nos <span class=" text-yellow-400">Spiritueux </span></h1>
+            <div class="mx-auto mt-6 flex justify-center">
+                <span class="inline-block h-1 w-1 rounded-full bg-yellow-400"></span><span
+                    class="mx-1 inline-block h-1 w-3 rounded-full bg-yellow-400"></span><span
+                    class="inline-block h-1 w-40 rounded-full bg-yellow-400"></span><span
+                    class="mx-1 inline-block h-1 w-3 rounded-full bg-yellow-400"></span><span
+                    class="inline-block h-1 w-1 rounded-full bg-yellow-400"></span>
+            </div>
+        </div>
+        <section id="Projects"
+            class="gap-8 w-full mx-auto max-w-7xl px-4 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+
+            <!--    Product card 1 - Starts Here  -->
+            <div
+                class="max-w-7xl px-4 mx-auto w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <a href="#">
+                    <img src="image/3.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3 uppercase text-xs">Drink King</span>
+                        <p class="text-lg font-bold text-black truncate block capitalize">MACALLAN</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold text-black cursor-auto my-3">65.000 FCFA</p>
+                            <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">75.000 FCFA</p>
+                            </del>
+                            <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--    Product card 1 - Ends Here  -->
+
+            <!--    Product card 2 - Starts Here  -->
+            <div
+                class="max-w-7xl px-4 mx-auto w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <a href="#">
+                    <img src="image/4.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3 uppercase text-xs">Drink King</span>
+                        <p class="text-lg font-bold text-black truncate block capitalize">GLENFIDDICH & DALMORE</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold text-black cursor-auto my-3">75.000 FCFA</p>
+                            <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">89.000 FCFA</p>
+                            </del>
+                            <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--    Product card 2- Ends Here  -->
+
+            <!--    Product card 3 - Starts Here  -->
+            <div
+                class="max-w-7xl px-4 mx-auto w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <a href="#">
+                    <img src="image/Shadowfall - Premium Soviet Vodka Shuttle.jpg" alt="Product"
+                        class="h-80 w-72 object-cover rounded-t-xl" />
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3 uppercase text-xs">Drink King</span>
+                        <p class="text-lg font-bold text-black truncate block capitalize">SHADOW FALL</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold text-black cursor-auto my-3">50.000 FCFA</p>
+                            <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">60.000 FCFA</p>
+                            </del>
+                            <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--    Product card 3 - Ends Here  -->
+
+            <!--    Product card 4 - Starts Here  -->
+            <div
+                class="max-w-7xl px-4 mx-auto w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <a href="#">
+                    <img src="image/télécharger (1).jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3 uppercase text-xs">Drink King</span>
+                        <p class="text-lg font-bold text-black truncate block capitalize">ANDRES</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold text-black cursor-auto my-3">85.000 FCFA</p>
+                            <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">90.000 FCFA</p>
+                            </del>
+                            <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--    Product card 4 - Ends Here  -->
+
+            <!--    Product card 5 - Starts Here  -->
+            <div
+                class="max-w-7xl px-4 mx-auto w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <a href="#">
+                    <img src="image/télécharger (2).jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3 uppercase text-xs">Drink King</span>
+                        <p class="text-lg font-bold text-black truncate block capitalize">HENNESSY</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold text-black cursor-auto my-3">90.000 FCFA</p>
+                            <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">105.000 FCFA</p>
+                            </del>
+                            <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--    Product card 5 - Ends Here  -->
+
+            <!--    Product card 6 - Starts Here  -->
+            <div
+                class="max-w-7xl px-4 mx-auto w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <a href="#">
+                    <img src="image/télécharger.jpg" alt="Product" class="h-80 w-72 object-cover rounded-t-xl" />
+                    <div class="px-4 py-3 w-72">
+                        <span class="text-gray-400 mr-3 uppercase text-xs">Drink King</span>
+                        <p class="text-lg font-bold text-black truncate block capitalize">DAMIAN</p>
+                        <div class="flex items-center">
+                            <p class="text-lg font-semibold text-black cursor-auto my-3">55.000 FCFA</p>
+                            <del>
+                                <p class="text-sm text-gray-600 cursor-auto ml-2">60.000 FCFA</p>
+                            </del>
+                            <div class="ml-auto"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                    fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4">
+            <aside
+                class="p-8 my-8 bg-white border border-yellow-400 rounded-lg shadow-xl sm:p-6 lg:p-8 dark:bg-yellow-400 dark:border-yellow-400"
+                aria-label="Subscribe to the Flowbite newsletter">
+                <h3 class="mb-3 text-xl font-medium text-yellow-400 dark:text-white">Recevez plus de mises à jour…</h3>
+                <p class="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300">
+                    Inscrivez-vous à notre newsletter et vous serez parmi les premiers à découvrir les nouvelles
+                    fonctionnalités.
+                </p>
+                <form>
+                    <div data-style="clean" class="flex items-end mb-3">
+                        <div data-element="fields" data-stacked="false"
+                            class="flex items-center w-full max-w-md mb-3 seva-fields formkit-fields">
+                            <div class="relative w-full mr-3 formkit-field">
+                                <label for="member_email"
+                                    class="hidden block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email
+                                    address</label>
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" fill="currentColor"
+                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                                        </path>
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                    </svg>
+                                </div>
+                                <input id="member_email"
+                                    class="formkit-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    name="email_address" aria-label="Email Address" placeholder="Votre addresse email..."
+                                    required="" type="email">
+                            </div>
+                            <a href="²mailto:judi8719@gmail.com"><span
+                                class="px-5 py-3 text-sm font-medium text-center text-white bg-yellow-400 rounded-lg cursor-pointer hover:bg-yellow-500 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">S’abonner</span></a>
+                        </div>
+                    </div>
+                </form>
+                <div class="text-sm font-medium text-gray-500 dark:text-gray-300">En vous abonnant, vous acceptez les
+                    Conditions d’utilisation et la Politique de confidentialité de <a href="C:\Users\USER\Documents\site\index.html">Drink King.</a>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col justify-between">
+    <a href="C:\Users\USER\Documents\site\index.html" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg> -->
+      <span class="ml-3 text-xl">Drink King</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2026 Drink King —
+      <a href="C:\Users\USER\Documents\site\index.html" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Drink king</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
